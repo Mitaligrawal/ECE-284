@@ -13,6 +13,7 @@ Top-level folders (required):
 - `Part4_Poster`
 - `Part5_Alpha`
 - `Part6_Report`
+- `Part7_ProgressReport`
 
 Each part described below contains required files and folder structure. Follow the naming and paths exactly so TAs can run automated checks.
 
