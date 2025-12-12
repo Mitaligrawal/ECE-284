@@ -135,7 +135,7 @@ initial begin
   $dumpvars(0,core_tb);
 
   //x_file = $fopen("activation_tile0.txt", "r");
-  x_file = $fopen("activation.txt", "r");
+  x_file = $fopen("../datafiles/activation.txt", "r");
   // Following three lines are to remove the first three comment lines of the file
   x_scan_file = $fscanf(x_file,"%s", captured_data);
   x_scan_file = $fscanf(x_file,"%s", captured_data);
@@ -195,15 +195,15 @@ initial begin
      //6: w_file_name = "weight_itile0_otile0_kij6.txt";
      //7: w_file_name = "weight_itile0_otile0_kij7.txt";
      //8: w_file_name = "weight_itile0_otile0_kij8.txt";
-     0: w_file_name = "weight_0.txt";
-     1: w_file_name = "weight_1.txt";
-     2: w_file_name = "weight_2.txt";
-     3: w_file_name = "weight_3.txt";
-     4: w_file_name = "weight_4.txt";
-     5: w_file_name = "weight_5.txt";
-     6: w_file_name = "weight_6.txt";
-     7: w_file_name = "weight_7.txt";
-     8: w_file_name = "weight_8.txt";
+     0: w_file_name = "../datafiles/weight_0.txt";
+     1: w_file_name = "../datafiles/weight_1.txt";
+     2: w_file_name = "../datafiles/weight_2.txt";
+     3: w_file_name = "../datafiles/weight_3.txt";
+     4: w_file_name = "../datafiles/weight_4.txt";
+     5: w_file_name = "../datafiles/weight_5.txt";
+     6: w_file_name = "../datafiles/weight_6.txt";
+     7: w_file_name = "../datafiles/weight_7.txt";
+     8: w_file_name = "../datafiles/weight_8.txt";
     endcase
     case(kij)
      //0: w_file_name = "weight_itile0_otile0_kij0.txt";
@@ -215,15 +215,15 @@ initial begin
      //6: w_file_name = "weight_itile0_otile0_kij6.txt";
      //7: w_file_name = "weight_itile0_otile0_kij7.txt";
      //8: w_file_name = "weight_itile0_otile0_kij8.txt";
-     0: psum_file_name = "psum_0.txt";
-     1: psum_file_name = "psum_1.txt";
-     2: psum_file_name = "psum_2.txt";
-     3: psum_file_name = "psum_3.txt";
-     4: psum_file_name = "psum_4.txt";
-     5: psum_file_name = "psum_5.txt";
-     6: psum_file_name = "psum_6.txt";
-     7: psum_file_name = "psum_7.txt";
-     8: psum_file_name = "psum_8.txt";
+     0: psum_file_name = "../datafiles/psum_0.txt";
+     1: psum_file_name = "../datafiles/psum_1.txt";
+     2: psum_file_name = "../datafiles/psum_2.txt";
+     3: psum_file_name = "../datafiles/psum_3.txt";
+     4: psum_file_name = "../datafiles/psum_4.txt";
+     5: psum_file_name = "../datafiles/psum_5.txt";
+     6: psum_file_name = "../datafiles/psum_6.txt";
+     7: psum_file_name = "../datafiles/psum_7.txt";
+     8: psum_file_name = "../datafiles/psum_8.txt";
     endcase
 
     A_pmem[kij_index+nij_index-1:nij_index] = kij;
@@ -440,7 +440,7 @@ $display("Row 0, col 8 weight: %b\n", core_instance.corelet_instance.mac_array_i
 
 
   ////////// Accumulation /////////
-  out_file = $fopen("out.txt", "r");  
+  out_file = $fopen("../datafiles/out.txt", "r");  
 
   // Following three lines are to remove the first three comment lines of the file
   out_scan_file = $fscanf(out_file,"%s", answer); 
@@ -559,7 +559,7 @@ $display("Row 0, col 8 weight: %b\n", core_instance.corelet_instance.mac_array_i
   
 
   ////////// SFP output store to SRAM verification /////////
-  out_file = $fopen("out.txt", "r");  
+  out_file = $fopen("../datafiles/out.txt", "r");  
 
   // Following three lines are to remove the first three comment lines of the file
   out_scan_file = $fscanf(out_file,"%s", answer); 
