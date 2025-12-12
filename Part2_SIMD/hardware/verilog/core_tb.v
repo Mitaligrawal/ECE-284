@@ -76,9 +76,9 @@ reg l0_rd;
 reg l0_wr;
 reg execute;
 reg load;
-reg [8*30:1] stringvar;
-reg [8*30:1] w_file_name;
-reg [8*30:1] psum_file_name;
+reg [8*50:1] stringvar;
+reg [8*50:1] w_file_name;
+reg [8*50:1] psum_file_name;
 wire ofifo_valid;
 wire [col*psum_bw-1:0] sfp_out;
 
