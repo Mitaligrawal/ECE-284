@@ -1,0 +1,146 @@
+VCD info: dumpfile core_tb.vcd opened for output.
+Kij           0
+
+Kij           1
+
+Kij           2
+
+Kij           3
+
+Kij           4
+
+Kij           5
+
+Kij           6
+
+Kij           7
+
+Kij           8
+
+Kij           0
+
+Kij           1
+
+Kij           2
+
+Kij           3
+
+Kij           4
+
+Kij           5
+
+Kij           6
+
+Kij           7
+
+Kij           8
+
+psum memory contents: after finishing
+          0: fd88fde1fdfdff7eff5bfeabfd6d0143
+          1: fe21fcdbfd98fcf6fea4fef3fe10004e
+          2: ff32fdcffeaffd50fe3efe55fd84ff88
+          3: 0020ff3efeb9fee3fe410241fe41fefd
+          4: fc6bfe7cfe2bfbddff38fdcbff26fe35
+          5: fdccfe72fa61fbddfeadfd8afcc9ffa5
+          6: fcecfe25fd5efb5bfee0fd6bfc74fd85
+          7: fe72fdbffd96fe40fd84002dfbe3fe17
+          8: fe11fecefdd2fec90042fcd0fdb3fea8
+          9: fc9cfee2fca6fb7afe65fd01fdb6ff9d
+         10: fcfafeaafab9fbd6fd6ffc92fdcbfd24
+         11: fef9ff01ff77fdbdfed3ffa6f9fffea2
+         12: fe13ff6cfeabfebbff49fd77ffe4fe46
+         13: fce7ffc4fd9afe5aff84fe6cfe61fd6c
+         14: fc7a0016fdc5fc8400b8fd9cfc88fe6a
+         15: ff85feeafe7afe22ffc4ff7afdddfde7
+Checking results for raw partial sums on weight stationary execution
+ 0-th output featuremap Data matched! :D
+ 1-th output featuremap Data matched! :D
+ 2-th output featuremap Data matched! :D
+ 3-th output featuremap Data matched! :D
+ 4-th output featuremap Data matched! :D
+ 5-th output featuremap Data matched! :D
+ 6-th output featuremap Data matched! :D
+ 7-th output featuremap Data matched! :D
+ 8-th output featuremap Data matched! :D
+ 9-th output featuremap Data matched! :D
+10-th output featuremap Data matched! :D
+11-th output featuremap Data matched! :D
+12-th output featuremap Data matched! :D
+13-th output featuremap Data matched! :D
+14-th output featuremap Data matched! :D
+15-th output featuremap Data matched! :D
+validating activated (ReLU'd) PSUMs from weight stationary execution
+ 0-th output featuremap Data matched! :D
+ 1-th output featuremap Data matched! :D
+ 2-th output featuremap Data matched! :D
+ 3-th output featuremap Data matched! :D
+ 4-th output featuremap Data matched! :D
+ 5-th output featuremap Data matched! :D
+ 6-th output featuremap Data matched! :D
+ 7-th output featuremap Data matched! :D
+ 8-th output featuremap Data matched! :D
+ 9-th output featuremap Data matched! :D
+10-th output featuremap Data matched! :D
+11-th output featuremap Data matched! :D
+12-th output featuremap Data matched! :D
+13-th output featuremap Data matched! :D
+14-th output featuremap Data matched! :D
+15-th output featuremap Data matched! :D
+
+Zeroed out psum in preparation for testing output stationary execution; expect failure
+
+Loading weights for Kij           0
+
+Loading weights for Kij           1
+
+Loading weights for Kij           2
+
+Loading weights for Kij           3
+
+Loading weights for Kij           4
+
+Loading weights for Kij           5
+
+Loading weights for Kij           6
+
+Loading weights for Kij           7
+
+Loading weights for Kij           8
+
+Loading weights for Kij           9
+
+Loading weights for Kij          10
+
+Loading weights for Kij          11
+
+Loading weights for Kij          12
+
+Loading weights for Kij          13
+
+Loading weights for Kij          14
+
+Loading weights for Kij          15
+
+Loading weights for Kij          16
+
+Loading weights for Kij          17
+
+validating raw PSUMs from output stationary execution
+ 0-th output featuremap Data matched! :D
+ 1-th output featuremap Data matched! :D
+ 2-th output featuremap Data matched! :D
+ 3-th output featuremap Data matched! :D
+ 4-th output featuremap Data matched! :D
+ 5-th output featuremap Data matched! :D
+ 6-th output featuremap Data matched! :D
+ 7-th output featuremap Data matched! :D
+validating activated (ReLU'd) PSUMs from output stationary execution
+ 0-th output featuremap Data matched! :D
+ 1-th output featuremap Data matched! :D
+ 2-th output featuremap Data matched! :D
+ 3-th output featuremap Data matched! :D
+ 4-th output featuremap Data matched! :D
+ 5-th output featuremap Data matched! :D
+ 6-th output featuremap Data matched! :D
+ 7-th output featuremap Data matched! :D
+./verilog/core_tb.v:1107: $finish called at 2750500 (1ps)

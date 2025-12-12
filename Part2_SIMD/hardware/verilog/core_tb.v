@@ -165,9 +165,9 @@ initial begin
 
     //x_file = $fopen("activation_tile0.txt", "r");
 	  if (act_mode == 0) begin
-	  	x_file = $fopen("P1_Files/activation.txt", "r");
+	  	x_file = $fopen("../datafiles/P1_Files/activation.txt", "r");
 	  end else begin
-	  	x_file = $fopen("P2_Files/activation.txt", "r");
+	  	x_file = $fopen("../datafiles/P2_Files/activation.txt", "r");
 	  end
 	  // Following three lines are to remove the first three comment lines of the file
 	  x_scan_file = $fscanf(x_file,"%s", captured_data);
@@ -205,75 +205,75 @@ initial begin
 	      if (tile == 0) begin
           if (act_mode) begin
             case(kij)
-		          0: w_file_name = "P2_Files/Tile0/weight_0.txt";
-		          1: w_file_name = "P2_Files/Tile0/weight_1.txt";
-		          2: w_file_name = "P2_Files/Tile0/weight_2.txt";
-		          3: w_file_name = "P2_Files/Tile0/weight_3.txt";
-		          4: w_file_name = "P2_Files/Tile0/weight_4.txt";
-		          5: w_file_name = "P2_Files/Tile0/weight_5.txt";
-		          6: w_file_name = "P2_Files/Tile0/weight_6.txt";
-		          7: w_file_name = "P2_Files/Tile0/weight_7.txt";
-		          8: w_file_name = "P2_Files/Tile0/weight_8.txt";
+		          0: w_file_name = "../datafiles/P2_Files/Tile0/weight_0.txt";
+		          1: w_file_name = "../datafiles/P2_Files/Tile0/weight_1.txt";
+		          2: w_file_name = "../datafiles/P2_Files/Tile0/weight_2.txt";
+		          3: w_file_name = "../datafiles/P2_Files/Tile0/weight_3.txt";
+		          4: w_file_name = "../datafiles/P2_Files/Tile0/weight_4.txt";
+		          5: w_file_name = "../datafiles/P2_Files/Tile0/weight_5.txt";
+		          6: w_file_name = "../datafiles/P2_Files/Tile0/weight_6.txt";
+		          7: w_file_name = "../datafiles/P2_Files/Tile0/weight_7.txt";
+		          8: w_file_name = "../datafiles/P2_Files/Tile0/weight_8.txt";
 		        endcase
 		        case(kij)
-		          0: psum_file_name = "P2_Files/Tile0/psum_0.txt";
-		          1: psum_file_name = "P2_Files/Tile0/psum_1.txt";
-		          2: psum_file_name = "P2_Files/Tile0/psum_2.txt";
-		          3: psum_file_name = "P2_Files/Tile0/psum_3.txt";
-		          4: psum_file_name = "P2_Files/Tile0/psum_4.txt";
-		          5: psum_file_name = "P2_Files/Tile0/psum_5.txt";
-		          6: psum_file_name = "P2_Files/Tile0/psum_6.txt";
-		          7: psum_file_name = "P2_Files/Tile0/psum_7.txt";
-		          8: psum_file_name = "P2_Files/Tile0/psum_8.txt";
+		          0: psum_file_name = "../datafiles/P2_Files/Tile0/psum_0.txt";
+		          1: psum_file_name = "../datafiles/P2_Files/Tile0/psum_1.txt";
+		          2: psum_file_name = "../datafiles/P2_Files/Tile0/psum_2.txt";
+		          3: psum_file_name = "../datafiles/P2_Files/Tile0/psum_3.txt";
+		          4: psum_file_name = "../datafiles/P2_Files/Tile0/psum_4.txt";
+		          5: psum_file_name = "../datafiles/P2_Files/Tile0/psum_5.txt";
+		          6: psum_file_name = "../datafiles/P2_Files/Tile0/psum_6.txt";
+		          7: psum_file_name = "../datafiles/P2_Files/Tile0/psum_7.txt";
+		          8: psum_file_name = "../datafiles/P2_Files/Tile0/psum_8.txt";
 		        endcase
           end else begin
             case(kij)
-		          0: w_file_name = "P1_Files/Tile0/weight_0.txt";
-		          1: w_file_name = "P1_Files/Tile0/weight_1.txt";
-		          2: w_file_name = "P1_Files/Tile0/weight_2.txt";
-		          3: w_file_name = "P1_Files/Tile0/weight_3.txt";
-		          4: w_file_name = "P1_Files/Tile0/weight_4.txt";
-		          5: w_file_name = "P1_Files/Tile0/weight_5.txt";
-		          6: w_file_name = "P1_Files/Tile0/weight_6.txt";
-		          7: w_file_name = "P1_Files/Tile0/weight_7.txt";
-		          8: w_file_name = "P1_Files/Tile0/weight_8.txt";
+		          0: w_file_name = "../datafiles/P1_Files/Tile0/weight_0.txt";
+		          1: w_file_name = "../datafiles/P1_Files/Tile0/weight_1.txt";
+		          2: w_file_name = "../datafiles/P1_Files/Tile0/weight_2.txt";
+		          3: w_file_name = "../datafiles/P1_Files/Tile0/weight_3.txt";
+		          4: w_file_name = "../datafiles/P1_Files/Tile0/weight_4.txt";
+		          5: w_file_name = "../datafiles/P1_Files/Tile0/weight_5.txt";
+		          6: w_file_name = "../datafiles/P1_Files/Tile0/weight_6.txt";
+		          7: w_file_name = "../datafiles/P1_Files/Tile0/weight_7.txt";
+		          8: w_file_name = "../datafiles/P1_Files/Tile0/weight_8.txt";
 		        endcase
 		        case(kij)
-		          0: psum_file_name = "P1_Files/Tile0/psum_0.txt";
-		          1: psum_file_name = "P1_Files/Tile0/psum_1.txt";
-		          2: psum_file_name = "P1_Files/Tile0/psum_2.txt";
-		          3: psum_file_name = "P1_Files/Tile0/psum_3.txt";
-		          4: psum_file_name = "P1_Files/Tile0/psum_4.txt";
-		          5: psum_file_name = "P1_Files/Tile0/psum_5.txt";
-		          6: psum_file_name = "P1_Files/Tile0/psum_6.txt";
-		          7: psum_file_name = "P1_Files/Tile0/psum_7.txt";
-		          8: psum_file_name = "P1_Files/Tile0/psum_8.txt";
+		          0: psum_file_name = "../datafiles/P1_Files/Tile0/psum_0.txt";
+		          1: psum_file_name = "../datafiles/P1_Files/Tile0/psum_1.txt";
+		          2: psum_file_name = "../datafiles/P1_Files/Tile0/psum_2.txt";
+		          3: psum_file_name = "../datafiles/P1_Files/Tile0/psum_3.txt";
+		          4: psum_file_name = "../datafiles/P1_Files/Tile0/psum_4.txt";
+		          5: psum_file_name = "../datafiles/P1_Files/Tile0/psum_5.txt";
+		          6: psum_file_name = "../datafiles/P1_Files/Tile0/psum_6.txt";
+		          7: psum_file_name = "../datafiles/P1_Files/Tile0/psum_7.txt";
+		          8: psum_file_name = "../datafiles/P1_Files/Tile0/psum_8.txt";
 		        endcase
 
           end
 	      end 
           else begin
             case(kij)
-              0: w_file_name = "P2_Files/Tile1/weight_0.txt";
-              1: w_file_name = "P2_Files/Tile1/weight_1.txt";
-              2: w_file_name = "P2_Files/Tile1/weight_2.txt";
-              3: w_file_name = "P2_Files/Tile1/weight_3.txt";
-              4: w_file_name = "P2_Files/Tile1/weight_4.txt";
-              5: w_file_name = "P2_Files/Tile1/weight_5.txt";
-              6: w_file_name = "P2_Files/Tile1/weight_6.txt";
-              7: w_file_name = "P2_Files/Tile1/weight_7.txt";
-              8: w_file_name = "P2_Files/Tile1/weight_8.txt";
+              0: w_file_name = "../datafiles/P2_Files/Tile1/weight_0.txt";
+              1: w_file_name = "../datafiles/P2_Files/Tile1/weight_1.txt";
+              2: w_file_name = "../datafiles/P2_Files/Tile1/weight_2.txt";
+              3: w_file_name = "../datafiles/P2_Files/Tile1/weight_3.txt";
+              4: w_file_name = "../datafiles/P2_Files/Tile1/weight_4.txt";
+              5: w_file_name = "../datafiles/P2_Files/Tile1/weight_5.txt";
+              6: w_file_name = "../datafiles/P2_Files/Tile1/weight_6.txt";
+              7: w_file_name = "../datafiles/P2_Files/Tile1/weight_7.txt";
+              8: w_file_name = "../datafiles/P2_Files/Tile1/weight_8.txt";
             endcase
             case(kij)
-              0: psum_file_name = "P2_Files/Tile1/psum_0.txt";
-              1: psum_file_name = "P2_Files/Tile1/psum_1.txt";
-              2: psum_file_name = "P2_Files/Tile1/psum_2.txt";
-              3: psum_file_name = "P2_Files/Tile1/psum_3.txt";
-              4: psum_file_name = "P2_Files/Tile1/psum_4.txt";
-              5: psum_file_name = "P2_Files/Tile1/psum_5.txt";
-              6: psum_file_name = "P2_Files/Tile1/psum_6.txt";
-              7: psum_file_name = "P2_Files/Tile1/psum_7.txt";
-              8: psum_file_name = "P2_Files/Tile1/psum_8.txt";
+              0: psum_file_name = "../datafiles/P2_Files/Tile1/psum_0.txt";
+              1: psum_file_name = "../datafiles/P2_Files/Tile1/psum_1.txt";
+              2: psum_file_name = "../datafiles/P2_Files/Tile1/psum_2.txt";
+              3: psum_file_name = "../datafiles/P2_Files/Tile1/psum_3.txt";
+              4: psum_file_name = "../datafiles/P2_Files/Tile1/psum_4.txt";
+              5: psum_file_name = "../datafiles/P2_Files/Tile1/psum_5.txt";
+              6: psum_file_name = "../datafiles/P2_Files/Tile1/psum_6.txt";
+              7: psum_file_name = "../datafiles/P2_Files/Tile1/psum_7.txt";
+              8: psum_file_name = "../datafiles/P2_Files/Tile1/psum_8.txt";
             endcase
           end
 
@@ -439,13 +439,13 @@ initial begin
 	  	////////// Accumulation /////////
 	  	if (tile == 0) begin
         if (act_mode) begin
-				  out_file = $fopen("P2_Files/Tile0/out.txt", "r");
+				  out_file = $fopen("../datafiles/P2_Files/Tile0/out.txt", "r");
         end else begin
-				  out_file = $fopen("P1_Files/Tile0/out.txt", "r");
+				  out_file = $fopen("../datafiles/P1_Files/Tile0/out.txt", "r");
         end  
 	  	end else begin
         if (act_mode) begin
-				  out_file = $fopen("P2_Files/Tile1/out.txt", "r");
+				  out_file = $fopen("../datafiles/P2_Files/Tile1/out.txt", "r");
         end
 		  end
 
@@ -557,12 +557,12 @@ initial begin
       ////////// SFP output store to SRAM verification /////////
       if (tile == 0) begin
         if (act_mode) begin
-          out_file = $fopen("P2_Files/Tile0/out.txt", "r");
+          out_file = $fopen("../datafiles/P2_Files/Tile0/out.txt", "r");
         end else begin
-          out_file = $fopen("P1_Files/Tile0/out.txt", "r");
+          out_file = $fopen("../datafiles/P1_Files/Tile0/out.txt", "r");
         end  
       end else begin
-        out_file = $fopen("P2_Files/Tile1/out.txt", "r");  
+        out_file = $fopen("../datafiles/P2_Files/Tile1/out.txt", "r");  
       end
 
 
