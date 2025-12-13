@@ -244,7 +244,7 @@ module core_tb;
   // useful tasks
   task automatic compare_psum_out;
     begin
-      out_file = $fopen("../OSWS_Files/out.txt", "r");  // only testing
+      out_file = $fopen("../datafiles/out.txt", "r");  // only testing
 
       // Following three lines are to remove the first three comment lines of the file
       out_scan_file = $fscanf(out_file, "%s", answer);
@@ -416,7 +416,7 @@ module core_tb;
 
     if (test_ws) begin
       //x_file = $fopen("activation_tile0.txt", "r");
-      x_file = $fopen("../OSWS_Files/activation.txt", "r");
+      x_file = $fopen("../datafiles/activation.txt", "r");
       // Following three lines are to remove the first three comment lines of the file
       x_scan_file = $fscanf(x_file, "%s", captured_data);
       x_scan_file = $fscanf(x_file, "%s", captured_data);
@@ -469,15 +469,15 @@ module core_tb;
       for (kij = 0; kij < 9; kij = kij + 1) begin  // kij loop
         $display("Kij %d\n", kij);
         case (kij)
-          0: w_file_name = "../OSWS_Files/weight_0.txt";
-          1: w_file_name = "../OSWS_Files/weight_1.txt";
-          2: w_file_name = "../OSWS_Files/weight_2.txt";
-          3: w_file_name = "../OSWS_Files/weight_3.txt";
-          4: w_file_name = "../OSWS_Files/weight_4.txt";
-          5: w_file_name = "../OSWS_Files/weight_5.txt";
-          6: w_file_name = "../OSWS_Files/weight_6.txt";
-          7: w_file_name = "../OSWS_Files/weight_7.txt";
-          8: w_file_name = "../OSWS_Files/weight_8.txt";
+          0: w_file_name = "../datafiles/weight_0.txt";
+          1: w_file_name = "../datafiles/weight_1.txt";
+          2: w_file_name = "../datafiles/weight_2.txt";
+          3: w_file_name = "../datafiles/weight_3.txt";
+          4: w_file_name = "../datafiles/weight_4.txt";
+          5: w_file_name = "../datafiles/weight_5.txt";
+          6: w_file_name = "../datafiles/weight_6.txt";
+          7: w_file_name = "../datafiles/weight_7.txt";
+          8: w_file_name = "../datafiles/weight_8.txt";
         endcase
         // NOTE: instead of writing all kijs before summing them (sequential
         // style), continuously perform the summation on the same psum elements.
@@ -854,15 +854,15 @@ module core_tb;
     for (kij = 0; kij < 9; kij = kij + 1) begin  // kij loop
       $display("Loading weights for Kij %d\n", kij);
       case (kij)
-        0: w_file_name = "../OSWS_Files/weight_0.txt";
-        1: w_file_name = "../OSWS_Files/weight_1.txt";
-        2: w_file_name = "../OSWS_Files/weight_2.txt";
-        3: w_file_name = "../OSWS_Files/weight_3.txt";
-        4: w_file_name = "../OSWS_Files/weight_4.txt";
-        5: w_file_name = "../OSWS_Files/weight_5.txt";
-        6: w_file_name = "../OSWS_Files/weight_6.txt";
-        7: w_file_name = "../OSWS_Files/weight_7.txt";
-        8: w_file_name = "../OSWS_Files/weight_8.txt";
+        0: w_file_name = "../datafiles/weight_0.txt";
+        1: w_file_name = "../datafiles/weight_1.txt";
+        2: w_file_name = "../datafiles/weight_2.txt";
+        3: w_file_name = "../datafiles/weight_3.txt";
+        4: w_file_name = "../datafiles/weight_4.txt";
+        5: w_file_name = "../datafiles/weight_5.txt";
+        6: w_file_name = "../datafiles/weight_6.txt";
+        7: w_file_name = "../datafiles/weight_7.txt";
+        8: w_file_name = "../datafiles/weight_8.txt";
       endcase
 
       w_file = $fopen(w_file_name, "r");
@@ -904,7 +904,7 @@ module core_tb;
 
 
     // load activations into activation SRAM
-    x_file = $fopen("../OSWS_Files/activation_os.txt", "r");
+    x_file = $fopen("../datafiles/activation_os.txt", "r");
     // Following three lines are to remove the first three comment lines of the file
     x_scan_file = $fscanf(x_file, "%s", captured_data);
     x_scan_file = $fscanf(x_file, "%s", captured_data);
