@@ -31,3 +31,6 @@ There are some differences in the way the data files are generated.
   As such, `activation_os.txt` is only meant for output-stationary execution. `activation.txt`, which stores activations
   in the normal configuration, is used for weight stationary execution. The testbench `core_tb.v` already uses each file appropriately.
 - psum_\*.txt is unused, as in-place accumulation is implemented in this version in both the output-stationary and input-stationary versions.
+
+All of the above applies for the OS version.
+For WS, please refer to Part 1.
