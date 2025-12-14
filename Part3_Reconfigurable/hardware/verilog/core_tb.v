@@ -243,8 +243,9 @@ module core_tb;
 
   // useful tasks
   task automatic compare_psum_out;
+    input integer length;
     begin
-      out_file = $fopen("../datafiles/out.txt", "r");  // only testing
+      out_file = $fopen("../datafiles/out.txt", "r");
 
       // Following three lines are to remove the first three comment lines of the file
       out_scan_file = $fscanf(out_file, "%s", answer);
@@ -253,7 +254,7 @@ module core_tb;
 
       RA_pmem = 0;
       CEN_pmem = 0;
-      for (t = 0; t < len_onij + 1; t = t + 1) begin
+      for (t = 0; t < length + 1; t = t + 1) begin
         if (t > 0) begin
           RA_pmem = RA_pmem + 1;
           // $display("Setting RA_pmem to %d as the next pmem request", RA_pmem);
@@ -814,7 +815,7 @@ module core_tb;
         end
       end
 
-      compare_psum_out;
+      compare_psum_out(16);
 
       #0.5 clk = 1'b0;
       CEN_pmem  = 1;
@@ -1069,7 +1070,7 @@ module core_tb;
     write_relu;
 
 
-    compare_psum_out;  // only the first 8 need to match
+    compare_psum_out(8);  // only the first 8 need to match
 
     #10 $finish;
 
