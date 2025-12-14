@@ -6,7 +6,7 @@ To run the .ipynb file, it may require editing the OS path to point to that dire
 
 For the 4-bit activations:
 Edit the 16x16 model to use an 8x16 instead.
-Also edit the output calculation code and file generation to incorporate tiling.
+Also edit the output calculation code and file generation to incorporate tiling on the output channels.
 Alternatively, simply use File Generation 8x16 instead.
 
 As the 2-bit activation input files are identical to Part 2, we do not duplicate the software files here.
