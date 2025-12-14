@@ -2,13 +2,14 @@
 
 Place software artifacts here (notebooks, trained model files, scripts):
 - `VGG16_Quantization_Aware_Training.ipynb` (include variants relevant to reconfigurable design)
+- `ProjectFileGen.ipynb` (For an example of how to generate activation_os.txt - must add this generation to VGG16_Quantization_Aware_Training if you wish to use VGG16 to generate activation_os)
 - `VGG16_Quantization_Aware_Training.pdf`
 - `misc/` for helper scripts and data processing utilities
 
 - Include instructions to reproduce results (dependencies, commands) if non-standard.
 
 To generate the weight files as well as a random set of inputs and golden outputs, run the entire VGG16_Quantization_Aware_Training.ipynb notebook.
-This will generate the files into the folder **TODO**. Copy all of these files into Part3_Reconfigurable/hardware/datafiles.
+This will generate the files. Copy all of these files into Part3_Reconfigurable/hardware/datafiles.
 The testbench will use these datafiles to perform execution. 
 
 There are some differences in the way the data files are generated.
